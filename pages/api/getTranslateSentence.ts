@@ -1,8 +1,12 @@
 import type { NextRequest } from 'next/server'
 
+/**
+ * What the fuck, it doesn't work!!!
+ */
+
 export const config = {
   runtime: 'edge',
-}
+};
 
 export default async function CryptoEdgeAPIRoute(request: NextRequest) {
   return new Response(

@@ -12,7 +12,7 @@ export default async function CryptoEdgeAPIRoute(request: NextRequest) {
 };
 
 function GetTranslateSentence(): any {
-  return __TranslateSentence[Math.random() * 100] || __TranslateSentence[0];
+  return __TranslateSentence[Math.round(Math.random()*__TranslateSentence.length)] || __TranslateSentence[0];
 };
 
 var __TranslateSentence = [
